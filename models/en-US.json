@@ -1,0 +1,147 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "dialog delegate starter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "factIntent",
+          "slots": [
+            {
+              "name": "city",
+              "type": "cityName",
+              "samples": [
+                "give me a fact about {city}",
+                "tell me some facts about {city}",
+                "{city}"
+              ]
+            }
+          ],
+          "samples": [
+            "give me a fact",
+            "get a fact",
+            "tell me about {city}",
+            "get me a fact for {city}",
+            "tell me a fact",
+            "tell me a fact about {city}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "paris"
+              }
+            },
+            {
+              "name": {
+                "value": "toronto"
+              }
+            },
+            {
+              "name": {
+                "value": "sydney"
+              }
+            },
+            {
+              "name": {
+                "value": "london"
+              }
+            },
+            {
+              "name": {
+                "value": "new delhi",
+                "synonyms": [
+                  "delhi"
+                ]
+              }
+            }
+          ],
+          "name": "cityName"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "factIntent",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "city",
+              "type": "cityName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.251925459829.983270759031"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1162780729786.1432530920282",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "which city are you going to?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Where are you going?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1162780729786.1143025724798",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "where are you starting your trip?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What city are you leaving from?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1162780729786.801508773141",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what date are you flying out?"
+          },
+          {
+            "type": "PlainText",
+            "value": "When will you start this trip?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.251925459829.983270759031",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "which city do you want to know the fact about,  you can say london or paris or new delhi?"
+          }
+        ]
+      }
+    ]
+  }
+}

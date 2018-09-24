@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "say alexa open dialog delegate starter",
+          "examplePhrases": [
+            "Alexa open dialog delegate starter",
+            "tell me a fact",
+            "give me a fact about london"
+          ],
+          "keywords": [
+            "dialog",
+            "delegate",
+            "fact",
+            "skill",
+            "templates"
+          ],
+          "name": "Dialog Delegate Starter",
+          "description": "say alexa open dialog delegate starter\nthen say tell me a fact",
+          "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
+          "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "./lambda/us-east-1_dialogDelegateStarter"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "http://dabblelab.com/terms",
+          "privacyPolicyUrl": "http://dabblelab.com/privacy"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
