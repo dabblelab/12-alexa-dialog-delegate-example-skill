@@ -22,8 +22,6 @@ const LaunchRequestHandler = {
     let speechText = 'Say tell me a fact to see the dialog delegate in action.';
     let repromptText = 'Say tell me a fact to see the dialog delegate in action.';
 
-
-
     return responseBuilder
       .speak(speechText)
       .reprompt(repromptText)

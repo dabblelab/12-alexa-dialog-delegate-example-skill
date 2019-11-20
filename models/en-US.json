@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "dialog delegate starter",
+      "invocationName": "template twelve",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",

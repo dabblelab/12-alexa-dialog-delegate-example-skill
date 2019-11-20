@@ -29,7 +29,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "sourceDir": "./lambda/us-east-1_dialogDelegateStarter"
+          "sourceDir": "./lambda/custom"
         },
         "interfaces": []
       }
