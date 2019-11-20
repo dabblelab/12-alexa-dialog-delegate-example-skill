@@ -4,6 +4,12 @@
       "invocationName": "template twelve",
       "intents": [
         {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+
+          ]
+        },
+        {
           "name": "AMAZON.CancelIntent",
           "samples": []
         },
